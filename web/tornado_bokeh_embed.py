@@ -13,7 +13,7 @@ from bokeh.themes import Theme
 
 from bokeh.sampledata.sea_surface_temperature import sea_surface_temperature
 
-env = Environment(loader=FileSystemLoader('templates'))
+env = Environment(loader=FileSystemLoader('templates'), autoescape=True)
 server_url = "http://localhost:9999/"
 
 
